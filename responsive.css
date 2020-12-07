@@ -1,0 +1,96 @@
+@media only screen and (max-width:950px){
+    header #logo{
+       margin: 10px;
+    }
+    .banner .banner-text h1{
+        font-size: 40px;
+    }
+    .banner .banner-text p{
+        font-size: 13px;
+    }
+    .banner .banner-text a{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    /* Portfolio */
+    .portf{
+        height: auto;
+    }
+}
+/* 500px */
+@media only screen and (max-width:500px){
+    header{
+        justify-content: space-between;
+    }
+    header #logo{
+        margin-right: 30px;
+    }
+    header nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgb(26, 26, 26);
+        height: 100vh;
+        width: 0;
+        margin: 0;
+        transition: all .5s ease;
+    }
+    header nav ul{
+        display: block;
+        margin-top: 100px;
+        /* width: ; */
+    }
+    header nav ul li{
+        margin: 40px;
+    }
+    header .toggler{
+        display: block;
+    }
+    header .toggler i{
+        font-size: 30px;
+    }
+    .banner .down i{
+        margin-top: 30px;
+    }
+        .banner .banner-text h1{
+        font-size: 30px;
+    }
+    .banner .banner-text p{
+        font-size: 13px;
+    }
+    .banner .banner-text a{
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    .intro-content .intro-cards .card{
+        width: 300px;
+    }
+    .banner .down a i{
+        margin-top: 30px;
+    }
+
+    /* Portfolio */
+    .portf .portf-cards .portf-card{
+        margin: 20px;
+    }
+    /* contact */
+    .cont footer .footerdivs h1{
+        margin: 0;
+    }
+    .cont footer .footerdivs {
+        justify-content: center;
+        margin: 10px;
+    }
+    .cont footer .footerdivs p{
+        display: inline-block;
+    }
+    .cont footer .footerdivs a{
+        display: inline-block;
+        margin: 5px;
+    }
+    .cont footer .footerdivs i{
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+}

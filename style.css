@@ -1,0 +1,364 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap');
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* header */
+header{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+header .toggler{
+    margin: 30px;
+    display: none;
+}
+header .toggler i{
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+header .toggler i:hover{
+    border: 1px solid #f1f1f1;
+}
+header #logo{
+    margin: 30px;
+}
+header #logo h1 span{
+    color: orange;
+    font-size: 35px;
+}
+header #logo h1{
+    font-size: 25px;
+    color: #f1f1f1;
+}
+header nav{
+    margin-top: 20px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    margin: 0 20px;
+}
+header nav ul li a{
+    color: silver;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 10px;
+    transition:  color .5s ease;
+}
+header nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+header nav ul li a:hover:after{
+    width: 100%;
+    transition: all .5s ease;
+}
+header nav ul li a:hover{
+    color: #fff;
+    transition:  color .5s ease;
+}
+/* banner hone section */
+.banner{
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+    padding-top: 60px;
+}
+.banner .banner-text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 100px;
+    padding: 0 30px;
+}
+.banner .banner-text h1{
+    font-size: 50px;
+}
+.banner .banner-text p{
+    color: gray;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.banner .banner-text a{
+    color: #fff;
+    background-color: rgb(255, 130, 35);
+    padding: 20px 40px;
+    transition: all .5s ease;
+    margin-top: 50px;
+}
+.banner .banner-text a:hover{
+    background-color: rgb(242, 105, 0);
+    transition: all .5s ease;
+}
+.banner .down{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.banner .down a i{
+    color: #fff;
+    font-size: 50px;
+    border: 1px solid gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 90px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.banner .down a i:hover{
+    border: 1px solid #f1f1f1;
+    transition: all .4s ease;
+}
+/* intro sectiion */
+.intro-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.intro-content .intro-text{
+    margin-top: 130px;
+}
+.intro-content .intro-text h1{
+    font-size: 30px;
+    color: orangered;
+}
+.intro-content .intro-text p{
+    color: rgb(43, 43, 43);
+}
+.intro-content .intro-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.intro-content .intro-cards .card{
+    width: 400px;
+    padding: 40px;
+}
+.intro-content .intro-cards .card i{
+    font-size: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 30px;
+}
+.intro-content .intro-cards .card p{
+    font-size: 13px;
+    padding: 10px;
+    color: rgb(36, 36, 36);
+}
+/* Portfolio section */
+.portf{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) ,url(bgportf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.portf .portf-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
+.portf .portf-text h1{
+    color: #fff;
+    margin-top: 120px;
+    font-size: 35px;
+}
+.portf .portf-text p{
+    color: gray;
+    margin-bottom: 30px;
+}
+.portf .portf-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.portf .portf-cards .portf-card{
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+    margin: 10px;
+    z-index: 1;
+}
+.portf .portf-cards .portf-card .image{
+    width: 250px;
+}
+.portf .portf-cards .portf-card h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.portf .portf-cards .portf-card p{
+    color: gray;
+}
+.portf .portf-cards .portf-card:hover{
+    filter: grayscale(0);
+    transition: all .5s ease;
+}
+.portf .portf-cards .portf-card:hover h1{
+    color: orangered;
+}
+.portf .portf-cards .portf-card:hover p{
+    color: #000;
+}
+/* Client section */
+.clientpart{
+    width: 100%;
+    /* height: 100vh; */
+}
+.clientpart .clientpart-text{
+    padding: 20px;
+}
+.clientpart .clientpart-text h1{
+    font-size: 35px;
+}
+.clientpart .clientpart-text p{
+    color: gray;
+}
+.clientpart .clients{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.clientpart .clientpart-text h1{
+    margin-top: 100px;
+}
+.clientpart .clients .client .image2{
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+.clientpart .clients .client{
+    width: 500px;
+    background-color: rgb(255, 147, 74);
+    padding: 20px;
+    box-shadow: 0 3px 30px 1px #000;
+    border-radius: 20px;
+    margin: 20px;
+}
+/* Footer contact */
+.cont{
+    width: 100%;
+    /* height: 45vh; */
+    background-color: #000;
+    /* margin-top: 150px; */
+}
+.cont footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont footer .footerdivs{
+    width: 300px;
+    margin-top: 40px;
+}
+.cont footer .footerdivs h1 span{
+    color: orange;
+    font-size: 25px;
+}
+.cont footer .footerdivs h1{
+    margin: 40px;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+.cont footer .footerdivs p{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.cont footer .footerdivs a{
+    display: block;
+    color: #fff;
+    margin: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transition: all .5s ease;
+}
+.cont footer .footerdivs a:hover{
+    transition: all .5s ease;
+    color: orange;
+}
+.cont footer .footerdivs i{
+    display: block;
+    margin-bottom: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.cont footer .footerdivs i:hover{
+    color: orange;
+    transition: all .4s ease;
+}
+.cont .copyright{
+    width: 100%;
+}
+.cont .copyright p{
+    color: gray;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* Scroll bar */
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(255, 81, 0);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+}
